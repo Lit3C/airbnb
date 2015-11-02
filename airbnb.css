@@ -1,0 +1,303 @@
+/*-----------------------------------------------------------------------------------GENERAL------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Verdana, sans-serif;
+  position: absolute;
+  background-color: #EDEFED;
+  width: 100%;
+  height: 100%;
+}
+/*-----------------------------------------------------------------------------------NAVBAR-------------*/
+nav {
+  width: 99%;
+  height: 60px;
+  display: inline;
+  position: absolute;
+  z-index: 100;
+  margin: 5px 13px;
+}
+/*-----------------------------------------------------LOGO-------------*/
+#logo {
+  padding-top: 5px;
+  width: 110px;
+  height: 40px;
+}
+/*-----------------------------------------------------MENU-------------*/
+#menu {
+  float: right;
+  margin: 17px;
+  font-size: 13.5px;
+}
+#menu li {
+  display: inline;
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px 7px;
+}
+#menu li a:visited, a:link {
+  text-decoration: none;
+  color: #FFF;
+}
+/*-------------------------MENU/1stBUTTON---*/
+#first {
+  border: 2px solid #FFF;
+  padding: 7px 12px;
+  border-radius: 3px;
+}
+#first:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*-----------------------------------------------------------------------------------HEADER-------------*/
+header {
+  width: 100%;
+}
+/*-----------------------------------------------------VIDEO------------*/
+.videoBackground{
+  overflow: hidden;
+  z-index: -1000;
+  height: 600px;
+}
+#video {
+  width: 100%;
+}
+/*-----------------------------------------------------TEXT-------------*/
+.textBackground {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  z-index: 20;
+  position: absolute;
+  top: 200px;
+}
+.textBackground *{
+  font-weight: bold;
+  text-decoration: none;
+}
+#title{
+  font-size: 4em;
+}
+#subtitle{
+  margin-bottom: 30px;
+}
+.textBackground a{
+  border-radius: 3px;
+  background-color: hsla(360, 100%, 100%, 0.5);
+  padding: 10px 30px;
+}
+.textBackground a:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*-----------------------------------------------------FORM-------------*/
+.form {
+  background-color: rgba(0,0,0,0.5);
+  height: 100px;
+  width: 100%;
+  z-index: 20;
+  position: absolute;
+  top: 500px;
+}
+/*fieldset {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  margin: 25px 10%;
+}
+fieldset {
+  padding: 15px;
+  background-color: #FFF;
+  color:#858B8D;
+}*/
+.form table {
+  color: #FFF;
+  border-spacing: 0px;
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  margin: 25px 10%
+}
+.form table td {
+  border: 1px solid #FFF;
+}
+#champ1 {
+  width: 100%;
+  height: 108%;
+}
+#champ2, #champ3 {
+  width: 98%;
+  height: 100%;
+}
+#champ4 {
+  color: #565A5C;
+  background-color: #FFF;
+  width: 100%;
+  height: 105%;
+}
+#rechercher {
+  background-color: #FF5A5F;
+  text-align: center;
+}
+/*-----------------------------------------------------------------------------------SECTION-------------*/
+section {
+  height: 300px;
+  width: 100%;
+  margin: 50px 0px 0px 0px;
+  position: relative;
+}
+.section1{
+  position: relative;
+  height: 1950px;
+}
+.section2{
+  background-color: blue;
+  position: relative;
+  height: 600px;
+}
+.section3{
+  position: relative;
+  background-color: #FFF;
+  width: 77%;
+  height: 500px;
+  margin: 50px 11.5%;
+}
+section table{
+  margin-top: 25px;
+}
+/*-----------------------------------------------------PART1-------------*/
+.part1 {
+  background-color: #FFF;
+  width: 77%;
+  height: 300px;
+  margin: 0px 11.5%;
+  position: absolute;
+  display: inline;
+}
+/*----------------------PART1/CROSSFADING---*/
+.contenerImg {
+  width:66%;
+  height:100%;
+  overflow: hidden;
+  position: relative;
+}
+.contenerImg img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.contenerImg img:nth-of-type(1){
+  -webkit-animation: fadeInOut 15s linear 10s infinite;
+}
+.contenerImg img:nth-of-type(2){
+  -webkit-animation: fadeInOut 15s linear 5s infinite;
+}
+.contenerImg img:nth-of-type(3){
+  -webkit-animation: fadeInOut 15s linear  infinite;
+}
+@-webkit-keyframes fadeInOut{
+  0% { opacity:1; }
+  20% { opacity:1; }
+  35% { opacity:0; }
+  93% { opacity:0; }
+  100% { opacity:1; }
+}
+/*------------------------PART1/BLOC1---*/
+.bloc1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 34%;
+  height: 100%;
+  margin: 0px;
+}
+#art001 {
+  margin: 20% 10%;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #565A5C;
+}
+/*-----------------------------------------------------PART1-------------*/
+.part2 {
+  background-color: #FFF;
+  width: 77%;
+  height: 325px;
+  margin: 350px 50px 11.5% 11.5%;
+  position: absolute;
+}
+/*-----------------------------------------------------PART1-------------*/
+.part3 {
+  background-color: #FFF;
+  width: 77%;
+  height: 1225px;
+  margin: 725px 0px 11.5% 11.5%;
+  position: absolute;
+}
+/*-----------------------------------------------------SLIDER-------------*/
+.slider{
+  width: 100%;
+  height: 600px;
+  position: absolute;
+}
+.contenerSlider img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: slideAnim 10s linear 5s infinite;
+}
+/*.contenerSlider img:nth-of-type(1){
+  -webkit-animation: slideAnim 15s linear 10s infinite;
+}
+.contenerSlider img:nth-of-type(2){
+  -webkit-animation: slideAnim 15s linear 5s infinite;
+}
+.contenerSlider img:nth-of-type(3){
+  -webkit-animation: slideAnim 15s linear 0s infinite;
+}*/
+@webkit-keyframes slideAnim {
+    0% {left: 0%;}
+    20%{left: -100%;}
+    50%{left: -200%;}
+}
+/*-----------------------------------------------------PART2-------------*/
+.part2 {
+  position: absolute;
+}
+/*-----------------------------------------------------------------------------------FOOTER-------------*/
+footer {
+  width: 100%;
+  height: 140px;
+  background: url(file:///home/neobot/Documents/airbnb/images/footer.jpg);
+  bottom: 0px;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------BROUILLON--------------------------------BROUILLON-------------------
+.contenerSlider {
+  width:66%;
+  height:100%;
+}
+.contenerSlider img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.contenerSlider img:nth-of-type(1){
+  -webkit-animation: fadeInOut 15s linear 10s infinite;
+}
+.contenerSlider img:nth-of-type(2){
+  -webkit-animation: fadeInOut 15s linear 5s infinite;
+}
+.contenerSlider img:nth-of-type(3){
+  -webkit-animation: fadeInOut 15s linear  infinite;
+}
+@-webkit-keyframes fadeInOut{
+  0% { opacity:1; }
+  20% { opacity:1; }
+  35% { opacity:0; }
+  93% { opacity:0; }
+  100% { opacity:1; }*/
